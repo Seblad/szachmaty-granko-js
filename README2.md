@@ -1,0 +1,1 @@
+# szachmaty-granko-js
