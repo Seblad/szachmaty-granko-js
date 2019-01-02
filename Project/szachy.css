@@ -1,0 +1,16 @@
+body 
+{
+	background-color: #bbb;
+	color: #000;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.biale{
+	width: 50px;
+	height: 50px;
+}
+.niebieskie{
+	height : 50px;
+	width : 50px;
+}
