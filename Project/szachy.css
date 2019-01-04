@@ -1,16 +1,64 @@
-body 
-{
+body {
 	background-color: #bbb;
 	color: #000;
 	margin: 0;
 	padding: 0;
-	text-align: center;
+	/*box-sizing: border-box;*/
 }
-.biale{
+
+/* reset box-sizing */
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+.biale {
 	width: 50px;
 	height: 50px;
 }
-.niebieskie{
-	height : 50px;
-	width : 50px;
+
+.niebieskie {
+	height: 50px;
+	width: 50px;
+}
+
+.field {
+}
+.chessboard-container {
+	display: block;
+	width: 100%;
+}
+.dk-chessboard {
+	display: flex;
+	margin-top: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	flex-wrap: wrap;
+	width: 600px;
+	height: 600px;
+	border: 5px #444 solid;
+	/* DK: We make sure that content is 400x400 and dont care about border & etc. */
+	box-sizing: content-box;
+	/*transform: scale(1, -1);*/
+}
+
+.field {
+	width: 75px;
+	height: 75px;
+	border: 1px #666 solid;
+	background: linear-gradient(135deg, #2664e0 0%,#5094ed 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	color: #444;
+	/*transform: rotateX(180deg);*/
+}
+
+.chessline:nth-child(even) .field:nth-child(even),
+.chessline:nth-child(odd) .field:nth-child(odd)
+{
+	background: linear-gradient(135deg, #f0f9ff 0%,#ffffff 100%);
+}
+
+.text-wrapper {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
