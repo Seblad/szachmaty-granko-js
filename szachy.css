@@ -27,7 +27,7 @@ body {
 	display: block;
 	width: 100%;
 }
-.dk-chessboard {
+.chessboard {
 	display: flex;
 	margin-top: 2em;
 	margin-left: auto;
@@ -40,7 +40,10 @@ body {
 	box-sizing: content-box;
 	/*transform: scale(1, -1);*/
 }
-
+#chessboard-automated {
+	/*width: 200px;*/
+	/*background: red;*/
+}
 .field {
 	width: 75px;
 	height: 75px;
