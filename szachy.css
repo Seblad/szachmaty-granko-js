@@ -32,10 +32,17 @@ body {
 	margin-top: 2em;
 	margin-left: auto;
 	margin-right: auto;
+	background: blue;
 	flex-wrap: wrap;
 	width: 600px;
 	height: 600px;
-	border: 5px #444 solid;
+	border: 35px #444 solid;
+	border-image: url(tlo.jpg) 100 round;
+	border-left-width: 150px;
+	border-right-width: 150px;
+	border-top-width: 15px;
+	border-bottom-width: 15px;
+
 	/* DK: We make sure that content is 400x400 and dont care about border & etc. */
 	box-sizing: content-box;
 	/*transform: scale(1, -1);*/
@@ -65,3 +72,4 @@ body {
 	margin-right: auto;
 	text-align: center;
 }
+
