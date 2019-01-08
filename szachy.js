@@ -13,17 +13,19 @@ document.addEventListener("DOMContentLoaded", function onDOMLoaded() {
     *      -> field (of chessline) */
     
         for (let j=8 ;j>0; j--){
-            let chessline = document.createElement("div")
+            let chessline = document.createElement("div");
             chessline.classList.add("chessline");
-            chessboard.appendChild(chessline); 
-            for (let i = 0; i <8 ; i++) {
+            chessboard.appendChild(chessline);
+            chessline.id=String.fromCharCode(73 - j);
+            for (let i = 1; i <9 ; i++) {
                 let pole = document.createElement("div");
-                pole.innerText = "P" + j;
                 pole.classList.add("field");
                 chessline.appendChild(pole);
+                pole.id=String.fromCharCode(73 - j)+i;
                 console.log(`${i} pole: `, pole);
         }
     
     }
     console.log("wzorzec: ", document.querySelector(".field"));
 });
+
