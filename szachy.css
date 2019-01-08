@@ -21,21 +21,37 @@ body {
 	width: 50px;
 }
 
+
+#tabble-wrapper{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(tlo.jpg);
+	background-size: cover;
+	height: 100%;
+}
 .chessboard-container {
-	display: block;
-	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*width: 100%;*/
+	width: 690px;
+	height: 690px;
+	background:  url("tlo2.jpg");
+	background-size: contain;
+	box-shadow: 0px 0px 80px 18px rgba(0,0,0,0.63);
+
 }
 .chessboard {
 	display: flex;
 	/* margin-top: 2em; */
-	margin-left: auto;
-	margin-right: auto;
+	/*margin-left: auto;*/
+	/*margin-right: auto;*/
 	background: blue;
 	flex-wrap: wrap;
 	width: 600px;
 	height: 600px;
-	border: 45px #444 solid;
-	text-align: center;
+	border: 0px #444 solid;
 	border-image: url(tlo2.jpg)  100% 0% 0% 0%;
 	border-image-width: 100% 0% 0% 0%;
 	/* border-image-width: 100%; */
@@ -73,9 +89,4 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-}
-
-#wrapper{
-		background-image: url(tlo.jpg);
-		background-size: cover;
 }
