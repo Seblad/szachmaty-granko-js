@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function onDOMLoaded() {
             chessline.classList.add("chessline");
             chessboard.appendChild(chessline);
             chessline.id=String.fromCharCode(73 - j);
-            for (let i = 1; i <9 ; i++) {
+            for (let i = 8; i >0 ; i--) {
                 let pole = document.createElement("div");
                 pole.classList.add("field");
                 chessline.appendChild(pole);
