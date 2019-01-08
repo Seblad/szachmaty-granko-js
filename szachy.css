@@ -21,21 +21,30 @@ body {
 	width: 50px;
 }
 
-.field {
-}
 .chessboard-container {
 	display: block;
 	width: 100%;
 }
 .chessboard {
 	display: flex;
-	margin-top: 2em;
+	/* margin-top: 2em; */
 	margin-left: auto;
 	margin-right: auto;
+	background: blue;
 	flex-wrap: wrap;
 	width: 600px;
 	height: 600px;
-	border: 5px #444 solid;
+	border: 45px #444 solid;
+	text-align: center;
+	border-image: url(tlo2.jpg)  100% 0% 0% 0%;
+	border-image-width: 100% 0% 0% 0%;
+	/* border-image-width: 100%; */
+	/* border-image: url(tlo.jpg) 100 round; 
+	border-left-width: 150px;
+	border-right-width: 150px;
+	border-top-width: 15px;
+	border-bottom-width: 15px; */
+
 	/* DK: We make sure that content is 400x400 and dont care about border & etc. */
 	box-sizing: content-box;
 	/*transform: scale(1, -1);*/
@@ -64,4 +73,9 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+}
+
+#wrapper{
+		background-image: url(tlo.jpg);
+		background-size: cover;
 }
